@@ -15,9 +15,8 @@ ENV CLIENT_ID="myclient"
 ENV CLIENT_SECRET="verysecret"
 
 # Create a new user with UID 10014
-RUN useradd -u 10014 choreolord
-
+RUN useradd -u 10031 test
 # Set a non-root user
-USER choreolord
+USER 10031
 
 CMD ["/zitadel-oidc-example"]
